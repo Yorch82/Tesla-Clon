@@ -1,27 +1,26 @@
 ---
-import LandingHeader from '../components/LandingHeader.astro';
-import HeroSection from '../components/HeroSection.astro';
-import Layout from '../layouts/Layout.astro'
-import ChargeSection from '../components/ChargeSection.astro';
+import ChargeSection from "../components/ChargeSection.astro"
+import HeroSection from "../components/HeroSection.astro"
+import LandingHeader from "../components/LandingHeader.astro"
+import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title='Coches eléctricos, energía solar y limpia | Tesla España'>
-  <main>
-    <LandingHeader />
-
-	<main class="snap-y snap-mandatory relative w-screen h-screen overflow-auto scroll-smooth">
-		<div class="snap-center">
-			<HeroSection />
-		</div>
-		<div class="snap-center">
-			<ChargeSection>
-		</div>
-		<div class="snap-center">
-			<HeroSection />
-		</div>
-		<div class="snap-center">
-			<ChargeSection>
-		</div>
-	</main>    
+<Layout title="Tesla - El coche de tus sueños (y de Elon Musk)">
+  <LandingHeader />
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth"
+  >
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ChargeSection />
+    </div>
+    <div class="snap-center">
+      <HeroSection />
+    </div>
+    <div class="snap-center">
+      <ChargeSection />
+    </div>
   </main>
 </Layout>
